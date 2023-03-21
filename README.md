@@ -1,1 +1,1 @@
-beije clone app with Next.js and Material Ui
+beije Clone App with Next.js and Material Ui
