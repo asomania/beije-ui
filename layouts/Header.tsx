@@ -20,7 +20,10 @@ const pages = [
 
 function Header() {
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#f5f5f5", boxShadow: "none" }}
+    >
       <Container>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1 }}>
@@ -32,17 +35,22 @@ function Header() {
               height={40}
             />
           </Box>
-          <Box sx={{ flexGrow: 2, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 2,
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
                 sx={{
                   fontFamily: "Roboto",
                   my: 2,
-                  color: "white",
                   display: "block",
                   textTransform: "capitalize",
                   fontSize: "1rem",
+                  color: "#000",
                 }}
               >
                 {page}
@@ -51,20 +59,19 @@ function Header() {
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <IconButton sx={{ p: 1, fontSize: "large" }}>
-              <ShoppingCartOutlinedIcon sx={{ color: "white" }} />
+              <ShoppingCartOutlinedIcon />
             </IconButton>
 
             <IconButton sx={{ p: 1, fontSize: "large" }}>
-              <PersonOutlinedIcon sx={{ color: "white" }} />
+              <PersonOutlinedIcon />
             </IconButton>
           </Box>{" "}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              color="inherit"
             >
               <MenuIcon />
             </IconButton>
