@@ -5,6 +5,7 @@ import {
   Box,
   TextField,
   Button,
+  Divider,
 } from "@mui/material";
 import {
   BsLinkedin,
@@ -50,7 +51,7 @@ const Footer = (): JSX.Element => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container justifyContent="space-between">
+        <Grid container justifyContent="space-between" marginY={4}>
           <Grid item xs={12} sm={5}>
             <Image
               src="./footer-image.svg"
@@ -112,7 +113,7 @@ const Footer = (): JSX.Element => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={1}></Grid>
-          <Grid item xs={12} sm={2}>
+          <Grid item xs={6} sm={2}>
             <Box>
               {footerLinks1.map((link) => (
                 <Typography variant="body1" marginBottom={2}>
@@ -129,7 +130,7 @@ const Footer = (): JSX.Element => {
               ))}
             </Box>
           </Grid>
-          <Grid item xs={12} sm={2}>
+          <Grid item xs={6} sm={2}>
             <Box>
               {footerLinks2.map((link) => (
                 <Typography variant="body1" marginBottom={2}>
@@ -169,6 +170,75 @@ const Footer = (): JSX.Element => {
             </Typography> */}
           </Grid>
         </Grid>
+        <Divider sx={{ backgroundColor: "rgba(255, 255, 255, 0.698)" }} />
+        <Box>
+          <Grid container marginTop={7}>
+            <Grid item xs={12} sm={3}>
+              <Box>
+                <Typography variant="h6" fontSize={14}>
+                  © 2023 beije. Tüm hakları saklıdır.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={7}>
+              <Box
+                sx={{ display: "flex" }}
+                gap={1}
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Typography variant="body1" fontSize={14}>
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    KVKK Aydınlatma Metni
+                  </a>
+                </Typography>
+
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    Üyelik Sözleşmesi
+                  </a>
+                </Typography>
+
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    Gizlilik Politikası
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    Çerez Politikası
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    Test Sonuçları
+                  </a>
+                </Typography>
+              </Box>
+            </Grid>
+
+            <Grid item xs={12} sm={2}>
+              <Box
+                sx={{ display: "flex" }}
+                gap={1}
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    EN
+                  </a>
+                </Typography>
+                |
+                <Typography variant="body1">
+                  <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+                    TR{" "}
+                  </a>
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
     </footer>
   );
