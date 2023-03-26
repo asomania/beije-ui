@@ -48,6 +48,7 @@ const Footer = (): JSX.Element => {
         color: "#fff",
         padding: "2rem 0",
         backgroundColor: "#262626",
+        height: "100vh",
       }}
     >
       <Container maxWidth="lg">
