@@ -54,7 +54,12 @@ const Footer = (): JSX.Element => {
     >
       <Container maxWidth="lg">
         <Grid container marginY={4}>
-          <Grid item xs={12} sm={5}>
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            sx={{ textAlign: { xs: "center", md: "start" } }}
+          >
             <Image
               src="./footer-image.svg"
               alt="footer-image"
@@ -101,6 +106,7 @@ const Footer = (): JSX.Element => {
                         "&:hover": {
                           backgroundColor: "#262626",
                         },
+                        width: "100%",
                       }}
                     >
                       Gönder
@@ -115,7 +121,8 @@ const Footer = (): JSX.Element => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={1}></Grid>
-          <Grid item xs={6} sm={2}>
+
+          <Grid item xs={6} sm={2} sx={{ marginTop: { xs: "2rem", md: "0" } }}>
             <Box>
               {footerLinks1.map((link) => (
                 <Typography variant="body1" marginBottom={2}>
@@ -132,7 +139,7 @@ const Footer = (): JSX.Element => {
               ))}
             </Box>
           </Grid>
-          <Grid item xs={6} sm={2}>
+          <Grid item xs={6} sm={2} sx={{ marginTop: { xs: "2rem", md: "0" } }}>
             <Box>
               {footerLinks2.map((link) => (
                 <Typography variant="body1" marginBottom={2}>
@@ -143,8 +150,15 @@ const Footer = (): JSX.Element => {
               ))}
             </Box>
           </Grid>
-          <Grid item xs={12} sm={2}>
-            <Box>
+          <Grid item xs={12} md={2}>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "block" },
+
+                justifyContent: { xs: "space-between" },
+                marginTop: { xs: "2rem", md: "0" },
+              }}
+            >
               {socialLinks.map((link, index) => (
                 <Typography variant="body1" fontSize={25}>
                   <a
@@ -160,7 +174,13 @@ const Footer = (): JSX.Element => {
                   >
                     {socialIcons[index]}
 
-                    <span style={{ fontSize: "16px" }}>{link}</span>
+                    <Typography
+                      variant="body1"
+                      fontSize={16}
+                      sx={{ display: { xs: "none", md: "flex" } }}
+                    >
+                      {link}
+                    </Typography>
                   </a>
                 </Typography>
               ))}
@@ -187,7 +207,10 @@ const Footer = (): JSX.Element => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ flexDirection: { xs: "column", sm: "row" } }}
+                sx={{
+                  flexDirection: { xs: "column", sm: "row" },
+                  marginTop: { xs: "1rem", sm: "0" },
+                }}
                 gap={1}
               >
                 <Typography variant="body1" fontSize={14}>
