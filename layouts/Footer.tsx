@@ -48,11 +48,12 @@ const Footer = (): JSX.Element => {
         color: "#fff",
         padding: "2rem 0",
         backgroundColor: "#262626",
-        height: "100vh",
+        minHeight: "100vh",
+        justifyContent: "center",
       }}
     >
       <Container maxWidth="lg">
-        <Grid container justifyContent="space-between" marginY={4}>
+        <Grid container marginY={4}>
           <Grid item xs={12} sm={5}>
             <Image
               src="./footer-image.svg"
@@ -158,6 +159,7 @@ const Footer = (): JSX.Element => {
                     }}
                   >
                     {socialIcons[index]}
+
                     <span style={{ fontSize: "16px" }}>{link}</span>
                   </a>
                 </Typography>
@@ -174,19 +176,19 @@ const Footer = (): JSX.Element => {
         <Divider sx={{ backgroundColor: "rgba(255, 255, 255, 0.698)" }} />
         <Box>
           <Grid container marginTop={7}>
-            <Grid item xs={12} sm={3}>
-              <Box>
-                <Typography variant="h6" fontSize={14}>
-                  © 2023 beije. Tüm hakları saklıdır.
-                </Typography>
-              </Box>
+            <Grid item xs={12} sm={3} textAlign="center">
+              <Typography variant="h6" fontSize={14}>
+                © 2023 beije. Tüm hakları saklıdır.
+              </Typography>
             </Grid>
             <Grid item xs={12} sm={7}>
-              <Box
-                sx={{ display: "flex" }}
-                gap={1}
-                alignItems="center"
+              <Grid
+                container
+                direction="row"
                 justifyContent="center"
+                alignItems="center"
+                sx={{ flexDirection: { xs: "column", sm: "row" } }}
+                gap={1}
               >
                 <Typography variant="body1" fontSize={14}>
                   <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
@@ -215,7 +217,7 @@ const Footer = (): JSX.Element => {
                     Test Sonuçları
                   </a>
                 </Typography>
-              </Box>
+              </Grid>
             </Grid>
 
             <Grid item xs={12} sm={2}>
