@@ -124,8 +124,8 @@ const Footer = (): JSX.Element => {
 
           <Grid item xs={6} sm={2} sx={{ marginTop: { xs: "2rem", md: "0" } }}>
             <Box>
-              {footerLinks1.map((link) => (
-                <Typography variant="body1" marginBottom={2}>
+              {footerLinks1.map((link, index) => (
+                <Typography variant="body1" marginBottom={2} key={index}>
                   <a
                     href="/"
                     style={{
@@ -141,8 +141,8 @@ const Footer = (): JSX.Element => {
           </Grid>
           <Grid item xs={6} sm={2} sx={{ marginTop: { xs: "2rem", md: "0" } }}>
             <Box>
-              {footerLinks2.map((link) => (
-                <Typography variant="body1" marginBottom={2}>
+              {footerLinks2.map((link, index) => (
+                <Typography variant="body1" marginBottom={2} key={index}>
                   <a href="/" style={{ color: "#fff", textDecoration: "none" }}>
                     {link}
                   </a>
@@ -160,7 +160,7 @@ const Footer = (): JSX.Element => {
               }}
             >
               {socialLinks.map((link, index) => (
-                <Typography variant="body1" fontSize={25}>
+                <Typography variant="body1" fontSize={25} key={index}>
                   <a
                     href="/"
                     style={{
