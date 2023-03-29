@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { Grid, Container } from "@mui/material";
 import ContainerTitle from "@/components/containerTitle";
+import ContainerContent from "@/components/containerContent";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <Grid container>
             <Grid item xs={12} sm={6}>
               <ContainerTitle />
+              <ContainerContent />
             </Grid>
           </Grid>
         </Container>
