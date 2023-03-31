@@ -1,14 +1,18 @@
-import React from "react";
 import { Header, Footer } from "./";
-import ILayoutProps from "@/types/ILayoutProps";
 
-const Layout = ({ children }: ILayoutProps) => {
+import React from "react";
+
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <div>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

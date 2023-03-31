@@ -132,7 +132,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Temperature"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -153,7 +153,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Custom marks"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -173,7 +173,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Custom marks"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -196,7 +196,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Temperature"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -216,7 +216,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Custom marks"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -238,7 +238,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Temperature"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
@@ -258,7 +258,7 @@ export default function ContainerContent() {
               </Typography>
               <Slider
                 aria-label="Custom marks"
-                defaultValue={20}
+                defaultValue={0}
                 step={10}
                 valueLabelDisplay="auto"
                 marks={marks}
