@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-#Warning you must use npm i react-swipeable-views --force
+## Warning you must use npm i react-swipeable-views --force
 
 First, run the development server:
 
