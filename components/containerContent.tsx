@@ -166,7 +166,6 @@ export default function ContainerContent() {
                   fontWeight: 400,
                   fontSize: "1rem",
                   marginTop: "1rem",
-
                   paddingBottom: "1rem",
                 }}
               >

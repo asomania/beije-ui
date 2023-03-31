@@ -21,8 +21,8 @@ const pages = [
 function Header() {
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: "#f5f5f5", boxShadow: "none" }}
+      position="sticky"
+      sx={{ backgroundColor: "#f5f5f5", boxShadow: "none", top: 0 }}
     >
       <Container>
         <Toolbar disableGutters>
