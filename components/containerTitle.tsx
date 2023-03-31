@@ -7,8 +7,8 @@ const containerTitle = (): JSX.Element => {
       <Box
         sx={{ display: "flex" }}
         justifyContent="space-between"
-        marginTop="8rem"
         alignItems="center"
+        marginBottom={4}
       >
         <Typography variant="h4" sx={{ fontWeight: 400 }}>
           Kendi Paketini Oluştur

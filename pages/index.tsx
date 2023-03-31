@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import { Grid, Container } from "@mui/material";
 import ContainerTitle from "@/components/containerTitle";
 import ContainerContent from "@/components/containerContent";
+import ContainerRight from "@/components/containerRight";
 
 export default function Home() {
   return (
@@ -13,16 +14,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className={styles.main}>
+      <body className={styles.main}>
         <Container>
-          <Grid container>
-            <Grid item xs={12} sm={6}>
+          <Grid container marginTop="8rem">
+            <Grid item xs={12} md={6}>
               <ContainerTitle />
               <ContainerContent />
             </Grid>
+            <Grid item xs={12} md={1}></Grid>
+            <Grid item sx={{ display: { xs: "none", md: "block" } }} md={5}>
+              <ContainerRight />
+            </Grid>
           </Grid>
         </Container>
-      </main>
+      </body>
     </>
   );
 }

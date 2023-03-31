@@ -51,6 +51,7 @@ function Header() {
                   textTransform: "capitalize",
                   fontSize: "1rem",
                   color: "#000",
+                  fontWeight: "unset",
                 }}
               >
                 {page}

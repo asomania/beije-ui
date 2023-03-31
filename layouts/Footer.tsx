@@ -48,7 +48,6 @@ const Footer = (): JSX.Element => {
         color: "#fff",
         padding: "2rem 0",
         backgroundColor: "#262626",
-        minHeight: "100vh",
         justifyContent: "center",
       }}
     >
