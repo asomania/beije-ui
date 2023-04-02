@@ -2,9 +2,11 @@ import { Box, Container, Fab, Typography } from "@mui/material";
 import React from "react";
 import { BsRepeat } from "react-icons/bs";
 import Image from "next/image";
+import { useItemCountValue } from "@/context/itemCount";
 
-const price = 1;
 const containerRight = () => {
+  const { itemCount } = useItemCountValue();
+  const price = itemCount;
   return (
     <Box sx={{ backgroundColor: "white", borderRadius: "16px" }} padding={4}>
       <Box>
@@ -36,6 +38,18 @@ const containerRight = () => {
             height={201}
           />
         </Box>
+        {price > 0 && (
+          <Box marginTop={4}>
+            <Container>
+              <Typography variant="h6" sx={{ fontWeight: 500 }}>
+                Ped Paketleri
+              </Typography>
+              <Typography variant="body1" sx={{ fontWeight: "unset" }}>
+                {itemCount} standart ped
+              </Typography>
+            </Container>
+          </Box>
+        )}
         <Box marginTop={4}>
           {
             <Fab
