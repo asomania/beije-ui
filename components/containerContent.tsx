@@ -187,7 +187,6 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
-              onChange={itemSet as any}
             />
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
