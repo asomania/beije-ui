@@ -167,6 +167,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
+              onChange={handleSliderChange}
             />
             <Typography
               variant="body1"
@@ -187,6 +188,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
+              onChange={handleSliderChange}
             />
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
@@ -210,7 +212,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
-              onChange={itemSet as any}
+              onChange={handleSliderChange}
             />
             <Typography
               variant="body1"
@@ -231,7 +233,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
-              onChange={itemSet as any}
+              onChange={handleSliderChange}
             />
           </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
@@ -254,7 +256,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
-              onChange={itemSet as any}
+              onChange={handleSliderChange}
             />
             <Typography
               variant="body1"
@@ -275,7 +277,7 @@ export default function ContainerContent() {
               marks={marks}
               min={0}
               max={60}
-              onChange={itemSet as any}
+              onChange={handleSliderChange}
             />
           </TabPanel>
         </Box>
