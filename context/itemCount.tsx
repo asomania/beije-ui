@@ -31,4 +31,4 @@ export const ItemCountProvider: React.FC<Props> = ({ children }) => {
   );
 };
 
-export const useItemCountValue = () => useContext(ItemCountContext);
+export const ItemCountValue = () => useContext(ItemCountContext);

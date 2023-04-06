@@ -2,10 +2,10 @@ import { Box, Container, Fab, Typography } from "@mui/material";
 import React from "react";
 import { BsRepeat } from "react-icons/bs";
 import Image from "next/image";
-import { useItemCountValue } from "@/context/itemCount";
+import { ItemCountValue } from "@/context/itemCount";
 
 const containerRight = () => {
-  const { itemCount } = useItemCountValue();
+  const { itemCount } = ItemCountValue();
   const price = itemCount;
   return (
     <Box sx={{ backgroundColor: "white", borderRadius: "16px" }} padding={4}>

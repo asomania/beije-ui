@@ -6,7 +6,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Slider, Typography } from "@mui/material";
-import { useItemCountValue } from "@/context/itemCount";
+import { ItemCountValue } from "@/context/itemCount";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -68,7 +68,7 @@ function a11yProps(index: number) {
 
 export default function ContainerContent() {
   const [value, setValue] = React.useState(0);
-  const { itemCount, itemSet } = useItemCountValue();
+  const { itemCount, itemSet } = ItemCountValue();
 
   const handleSliderChange = (event: any, value: number | number[]) => {
     if (typeof value === "number") {
