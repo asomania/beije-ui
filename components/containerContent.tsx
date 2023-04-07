@@ -106,17 +106,17 @@ export default function ContainerContent() {
             aria-label="action tabs example"
           >
             <Tab
-              label="beije Ped"
+              label="lorem Ped"
               {...a11yProps(0)}
               sx={{ textTransform: "inherit" }}
             />
             <Tab
-              label="beije Günlük Ped"
+              label="lorem Günlük Ped"
               {...a11yProps(1)}
               sx={{ textTransform: "inherit" }}
             />
             <Tab
-              label="beije Tampon"
+              label="lorem Tampon"
               {...a11yProps(2)}
               sx={{ textTransform: "inherit" }}
             />

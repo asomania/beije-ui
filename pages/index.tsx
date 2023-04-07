@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>beije | Kendi paketini oluştur</title>
+        <title>clone app | Kendi paketini oluştur</title>
       </Head>
 
       <Box>

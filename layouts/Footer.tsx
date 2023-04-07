@@ -114,7 +114,7 @@ const Footer = (): JSX.Element => {
                 </Grid>
               </form>
               <Typography variant="body1" fontSize={12} fontWeight={300}>
-                Abone olarak, beije KVKK ve Gizlilik Politikası'nı kabul ediyor
+                Abone olarak, Lorem KVKK ve Gizlilik Politikası'nı kabul ediyor
                 ve beije'den haber almayı onaylıyorum.
               </Typography>
             </Box>
@@ -197,7 +197,7 @@ const Footer = (): JSX.Element => {
           <Grid container marginTop={7}>
             <Grid item xs={12} sm={3} textAlign="center">
               <Typography variant="h6" fontSize={14}>
-                © 2023 beije. Tüm hakları saklıdır.
+                © 2023 lorem. Tüm hakları saklıdır.
               </Typography>
             </Grid>
             <Grid item xs={12} sm={7}>
